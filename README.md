@@ -65,7 +65,7 @@ en la que se ha caido, con lo que es un castigo mucho más leve.
 A continuación detallamos el contenido más importante del juego.
 
 #### Avatar
-El clásico maniquí de Unreal Engine que se puede mover y saltar.
+El clásico maniquí de Unreal Engine que se puede mover y saltar es el avatar que controla el jugador.
 
 #### Pociones
 Hay dos tipos y solo podremos coger una de cada. Lo bueno es que el efecto que tienen sobre el jugador no desaparece en toda la partida.
@@ -75,51 +75,31 @@ Hay dos tipos y solo podremos coger una de cada. Lo bueno es que el efecto que t
 
 #### Barriles
 
-Los barriles son cilindros de varios tamaños que caen por la rampa que pertenecen a la Zona 1. Estos tienen tamaños aleatorios y *spawnean* de manera aleatoria
-en lo más alto de la ladera. Si el personaje es golpeado por un barril, hará la "animación" de *ragdoll* y volverá al inicio
-del nivel. Al colisionar, el tronco desaparecerá de la escena.
-
-![](./img/barril.PNG)
+Los barriles son cilindros de varios tamaños que caen por la rampa que pertenecen a la Zona 1 y se generan de forma aleatoria en lo alto de la rampa. Si el avatar es golpeado por un barril, este se destruye pero el avatar se queda como un muñeco de trapo y se recarga el nivel desde el principio. 
 
 #### Troncos
 
-Los troncos son cilindros con una textura de tablas de madera que pertenecen al nivel de **Los Troncos Mareados**. Estos
-giran constantemente usando una velocidad de giro aleatoria (en un rango de valores para que su giro tenga sentido) tanto en el eje Y como en el Z.
-Si el personaje se queda quieto encima de un tronco, este lo empujará y el jugador caera al foso.
+Los troncos son cilindros alargados de madera que giran constantemente usando una velocidad aleatoria en los ejes Y y Z.
+Si el avatar se queda quieto encima de un tronco, este lo empujará con su rotación y lo tirará al foso.
 
-![](./img/tronco.PNG)
+#### Balas
 
-#### Cañones
+Los cañones se encuentran en la Zona 3. La funcionalidad de los cañones es disparar balas en un intervalo aleatorio. Si una bala colisiona con el jugador, tendrá el mismo comportamiento que los barriles, es decir, la bala se destruye pero el avatar se queda como un muñeco de trapo y se recarga el nivel desde el principio. 
 
-Los cañones se encuentran en el nivel de **La Pasarela de Jack Sparrow**. La funcionalidad de los cañones es disparar balas en un intervalo aleatorio
-entre 2 y 4 segundos. Si una bala colisiona con el jugador, tendrá el mismo comportamiento que los barriles, es decir, el jugador entrará en modo *ragdoll*
-y la bala desaparecerá de la escena.
+#### Plataformas fantasma
 
-![](./img/canon.PNG)
+Podemos encontrar plataformas normales en las Zonas 4 y 5. Sin embargo, en el primero de ellos algunas de las plataformas no tienen colisión (se podría decir que son ``fantasma'') y dejan caer al jugador.
 
-#### Plataformas
+#### Puertas fFalsas
 
-Podemos encontrar plataformas en los niveles de **Las Plataformas Fantasma** y **El Castillo de Disney**. En ambos niveles encontraremos plataformas normales,
-sin embargo, en el primero de ellos algunas de las plataformas no tienen colisión (se podría decir que son falsas) por los que el jugador caería 
-al foso.
+Para entrar en el castillo nos encontramos con 3 puertas. Sólo una de ellas es posible derribarla.
 
-![](./img/platform.PNG)
+#### Trofeo
 
-#### Puertas Falsas
-
-Para entrar en el castillo nos encontraremos con 3 puertas. Ninguna de ellas se abre, pero solo una se puede atravesar.
-
-![](./img/door.PNG)
-
-#### Esfera Dorada
-
-La esfera dorada es el premio final. Cuando la consigues se acabaría el juego.
-
-![](./img/esferadorada.PNG)
-
-
+Se trata de una esfera dorada que sirve de recompensa final. Al cogerla, termina el juego.
 
 ### Contenido
+Estos son los diagramas topológicos de las distintas zonas del nivel. Sería interesante añadir alguna captura de dibujos o esquemas sobre el nivel y sus contenidos.
 
 #### Zona-1
 
@@ -133,7 +113,7 @@ graph LR;
 
 ```mermaid
 graph LR;
-    finRampa[Final de la rampiña, con el generador de barriles bastante elevado];-->troncos[Troncos rodantes, 5];
+    finRampa[Final de la rampiña, con el generador de barriles bastante elevado]-->troncos[Troncos rodantes, 5];
     troncos[Troncos rodantes, 5]-->finTroncos[Primera zona de descanso];
 ```
 
@@ -149,7 +129,7 @@ graph LR;
 
 ```mermaid
 graph LR;
-    finPasarela[Segunda zona de descanso];-->plataformas[Plataformas fantasma, 6 y sólo 3 son verdaderas];
+    finPasarela[Segunda zona de descanso]-->plataformas[Plataformas fantasma, 6 y sólo 3 son verdaderas];
     plataformas[Platafomras fantasma, 6 y sólo 3 son verdaderas]-->finPlataformas[Antesala del castillo];
 ```
 
@@ -157,7 +137,7 @@ graph LR;
 
 ```mermaid
 graph LR;
-    finPlataformas[Antesala del castillo];-->puertas[Puertas falsas, 3 y sólo 1 se puede derribar];
+    finPlataformas[Antesala del castillo]-->puertas[Puertas falsas, 3 y sólo 1 se puede derribar];
     puertas[Puertas falsas, 3 y sólo 1 se puede derribar];-->salientes[Plataformas en las paredes del castillo];
     salientes[Plataformas en las paredes del castillo];-->finAvatar[El trofeo final, arriba del todo];
 ```
