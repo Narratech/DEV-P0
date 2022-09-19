@@ -133,7 +133,7 @@ graph LR;
 
 ```mermaid
 graph LR;
-    finRampa-->troncos[Troncos rodantes, 5];
+    finRampa[Final de la rampiña, con el generador de barriles bastante elevado];-->troncos[Troncos rodantes, 5];
     troncos[Troncos rodantes, 5]-->finTroncos[Primera zona de descanso];
 ```
 
