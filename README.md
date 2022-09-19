@@ -123,34 +123,27 @@ La esfera dorada es el premio final. Cuando la consigues se acabaría el juego.
 
 #### Zona-1
 
-![](./img/barriles_asesinos.PNG)
-
-```mermaid
-flowchat TD; 
-
-st=>start:  Comienzo 
-e=>end:  fin 
-op=>operation:  Mi operación
-cond=>condition:  ¿confirmar?
-
-st->op->cond
-cond(yes)->e
-cond(no)->op
-```
-
 ```mermaid
 graph LR;
-    Inicio del avatar-->Cartel, inicio de la rampa;
-    Cartel, inicio de la rampa-->Final de la rampa (generador de barriles);;
+    iniAvatar[Inicio del avatar]-->iniRampa[Cartel, inicio de la rampa];
+    iniRampa-->finRampa[Final de la rampa (generador de barriles)];
 ```
 
 #### Zona-2
 
-![](./img/troncos_mareados.PNG)
+```mermaid
+graph LR;
+    finRampa-->troncos[Troncos rodantes, 5];
+    troncos-->finTroncos[Primera zona de descanso];
+```
 
 #### Zona-3
 
-![](./img/pasarela_jack.PNG)
+```mermaid
+graph LR;
+    finTroncos-->pasarelas[Pasarelas de madera, 2];
+    pasarelas-->finPasarela[Segunda zona de descanso];
+```
 
 #### Zona-4
 
