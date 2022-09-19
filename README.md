@@ -113,7 +113,7 @@ graph LR;
 
 ```mermaid
 graph LR;
-    finRampa[Final de la rampiña, con el generador de barriles bastante elevado]-->troncos[Troncos rodantes, 5];
+    finRampa[Final de la rampa, con el generador de barriles bastante elevado]-->troncos[Troncos rodantes, 5];
     troncos[Troncos rodantes, 5]-->finTroncos[Primera zona de descanso];
 ```
 
@@ -130,7 +130,7 @@ graph LR;
 ```mermaid
 graph LR;
     finPasarela[Segunda zona de descanso]-->plataformas[Plataformas fantasma, 6 y sólo 3 son verdaderas];
-    plataformas[Platafomras fantasma, 6 y sólo 3 son verdaderas]-->finPlataformas[Antesala del castillo];
+    plataformas[Plataformas fantasma, 6 y sólo 3 son verdaderas]-->finPlataformas[Antesala del castillo];
 ```
 
 #### Zona-5
@@ -138,8 +138,8 @@ graph LR;
 ```mermaid
 graph LR;
     finPlataformas[Antesala del castillo]-->puertas[Puertas falsas, 3 y sólo 1 se puede derribar];
-    puertas[Puertas falsas, 3 y sólo 1 se puede derribar];-->salientes[Plataformas en las paredes del castillo];
-    salientes[Plataformas en las paredes del castillo];-->finAvatar[El trofeo final, arriba del todo];
+    puertas[Puertas falsas, 3 y sólo 1 se puede derribar]-->salientes[Plataformas en las paredes del castillo];
+    salientes[Plataformas en las paredes del castillo]-->finAvatar[El trofeo final, arriba del todo];
 ```
 
 ## Referencias
