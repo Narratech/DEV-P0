@@ -142,6 +142,26 @@ graph LR;
     salientes[Plataformas en las paredes del castillo]-->finAvatar[El trofeo final, arriba del todo];
 ```
 
+## Producción
+
+Las tareas se han realizado y el esfuerzo ha sido repartido entre los autores.
+
+| Estado  |  Tarea  |  Fecha  |  
+|:-:|:--|:-:|
+| ✔ | Diseño: Primer borrador | 2-12-2021 |
+| ✔ | Mecánica: Barriles que matan | 11-12-2021 |
+| ✔ | Mecánica: Balas de cañon que matan | 11-12-2021 |
+| ✔ | Mecánica: Poción de velocidad | 12-12-2021 |
+| ✔ | Mecánica: Poción de salto | 12-12-2021 |
+| ✔ | ...
+|  | OPTIONAL |  |
+| x | Menú | 3-12-2021 |
+| x | HUD | 12-12-2021 |
+
+## Posproducción
+
+Queda toda la posproducción por hacer: el pulido y la distribución del ejecutable del juego.
+
 ## Referencias
 Fall Guys, de Mediatonic Games.
 
