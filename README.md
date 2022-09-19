@@ -1,32 +1,57 @@
-# DEV-P0
-Desarrollo de Videojuegos - Práctica 0: SuperCastle
+# Desarrollo de Videojuegos - Práctica 0: SuperCastle
 
 Se trata de un prototipo básico de videojuego de plataformas 3D en el que controlamos a un personaje que debe alcanzar un trofeo en lo alto de un castillo, teniendo que superar para ello varias pruebas.
+
+La versión original del juego fue creada por Alejandro Villar, que posteriormente fue revisada y completada por Federico Peinado.
+
+El propósito es servir como ejemplo para las demás prácticas de la asignatura.
 
 ## Instalación y uso
 Todo el contenido del proyecto está disponible aquí en el repositorio, salvo la subcarpeta StarterContent que ofrece Unreal Engine por defecto.
 Esta subcarpeta debe incluirse en la carpeta Content. Si se tiene permiso, es posible [descargarla aquí](https://drive.google.com/file/d/1ece2mzryUjjU-GKg8I7tDDl_OTGqkTdx/view?usp=sharing).
 
+Al no estar publicada todavía ninguna versión ejecutable del prototipo, ni enlazado ningún video con las pruebas realizadas, es necesario abrir el proyecto en Unreal Engine y jugarlo desde allí.
+
 ## Preproducción
-- [Objetivo](#objetivo)
-  * [Victoria](#victoria)
+Aunque no hay un enunciado como tal que sirva de punto de partida, la preproducción consistió en el diseño de un juego que plantee pruebas divertidas y un super-castillo final al que hay que escalar para conseguir el trofeo.
+
+El diseño tiene estas secciones:
+- [Estética](#Estética)
+  * [Gráficos](#Gráficos)
+  * [Sonidos](#Sonidos)
+- [Dinámica](#Dinámica)
+  * [Objetivo](#Objetivo)
+  * [Victoria](#Victoria)
   * [Derrota](#Derrota)
-- [Actores](#actores)
-  * [El Personaje](#el-personaje)
-  * [Pociones](#pociones)
-  * [Barriles](#barriles)
-  * [Troncos](#troncos)
-  * [Cañones](#ca-ones)
-  * [Plataformas](#plataformas)
-  * [Puertas Falsas](#puertas-falsas)
-  * [Esfera Dorada](#esfera-dorada)
-- [Niveles](#niveles)
+- [Mecánica](#Mecánica)
+  * [Avatar](#Avatar)
+  * [Pociones](#Pociones)
+  * [Barriles](#Barriles)
+  * [Troncos](#Troncos)
+  * [Balas](#Balas)
+  * [Plataformas fantasma](#Plataformas)
+  * [Puertas falsas](#Puertas)
+  * [Trofeo](#Trofeo)
+- [Contenido](#Contenido)
   * [Los Barriles Asesinos](#los-barriles-asesinos)
   * [Los Troncos Mareados](#los-troncos-mareados)
   * [La Pasarela de Jack Sparrow](#la-pasarela-de-jack-sparrow)
   * [Las Plataformas Fantasma](#las-plataformas-fantasma)
   * [El Castillo de Disney](#el-castillo-de-disney)
-- [Sonidos](#sonidos)
+
+### Estética
+El juego usa solamente el contenido de la plantilla Third Person y el de principiantes, simplificando al máximo la composición de la escena, aunque sin tener un aspecto pulido y acabado.
+
+#### Gráficos
+El juego usa solamente el contenido de la plantilla Third Person y el de principiantes.
+
+#### Sonidos
+No hay música ambiente y los sonidos utilizados son simplemente:
+- **Power Up**. Se activa al coger alguna de las pociones.
+- **Cañón**. Cada vez que un cañón dispara emitirá este sonido.
+- **Victoria**. Cuando el jugador coge el trofeo sonará una fanfarria de victoria.
+
+
 
 ### Objetivo
 
@@ -101,11 +126,7 @@ La esfera dorada es el premio final. Cuando la consigues se acabaría el juego.
 
 ![](./img/esferadorada.PNG)
 
-### Sonidos
 
-- **Power Up**. Se activa al coger alguna de las pociones.
-- **Cañón**. Cada vez que un cañón disparece emitirá este sonido.
-- **Victoria**. Cuando el jugador coja la **esfera dorada** sonará una melodía que representa la victoria.
 
 ### Niveles
 
