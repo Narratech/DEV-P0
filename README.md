@@ -90,7 +90,7 @@ Los cañones se encuentran en la Zona 3. La funcionalidad de los cañones es dis
 
 Podemos encontrar plataformas normales en las Zonas 4 y 5. Sin embargo, en el primero de ellos algunas de las plataformas no tienen colisión (se podría decir que son ``fantasma'') y dejan caer al jugador.
 
-#### Puertas fFalsas
+#### Puertas falsas
 
 Para entrar en el castillo nos encontramos con 3 puertas. Sólo una de ellas es posible derribarla.
 
