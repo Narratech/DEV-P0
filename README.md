@@ -125,8 +125,7 @@ La esfera dorada es el premio final. Cuando la consigues se acabaría el juego.
 
 ![](./img/barriles_asesinos.PNG)
 
-‘’’mermaid
-
+```mermaid
 flowchat 
     // El frente es el símbolo a la izquierda del número 1 en el área de tres teclas principales. Lo reemplacé con comillas simples. Como todos los bloques de idiomas.
             // Generalmente escribe la estructura arriba y el proceso abajo
@@ -138,8 +137,7 @@ cond=>condition:  ¿confirmar?
 st->op->cond
 cond(yes)->e
 cond(no)->op
-
-‘’‘
+```
 
 ```mermaid
 graph TD;
@@ -165,7 +163,7 @@ graph TD;
 
 ![](./img/castillo.PNG)
 
-### Referencias
+## Referencias
 Fall Guys, de Mediatonic Games.
 
 
