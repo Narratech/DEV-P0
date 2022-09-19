@@ -2,9 +2,9 @@
 
 Se trata de un prototipo básico de videojuego de plataformas 3D en el que controlamos a un personaje que debe alcanzar un trofeo en lo alto de un castillo, teniendo que superar para ello varias pruebas.
 
-La versión original del juego fue creada por Alejandro Villar, que posteriormente fue revisada y completada por Federico Peinado.
+La versión original del juego fue creada por Alejandro Villar, que posteriormente fue revisada y completada por Federico Peinado. El código se distribuye bajo la licencia GPL.
 
-El propósito es servir como ejemplo para las demás prácticas de la asignatura.
+El propósito es servir como ejemplo a los alumnos para las demás prácticas de la asignatura.
 
 ## Instalación y uso
 Todo el contenido del proyecto está disponible aquí en el repositorio, salvo la subcarpeta StarterContent que ofrece Unreal Engine por defecto.
@@ -21,8 +21,7 @@ El diseño tiene estas secciones:
   * [Sonidos](#Sonidos)
 - [Dinámica](#Dinámica)
   * [Objetivo](#Objetivo)
-  * [Victoria](#Victoria)
-  * [Derrota](#Derrota)
+  * [Castigo](#Derrota)
 - [Mecánica](#Mecánica)
   * [Avatar](#Avatar)
   * [Pociones](#Pociones)
@@ -33,11 +32,11 @@ El diseño tiene estas secciones:
   * [Puertas falsas](#Puertas)
   * [Trofeo](#Trofeo)
 - [Contenido](#Contenido)
-  * [Los Barriles Asesinos](#los-barriles-asesinos)
-  * [Los Troncos Mareados](#los-troncos-mareados)
-  * [La Pasarela de Jack Sparrow](#la-pasarela-de-jack-sparrow)
-  * [Las Plataformas Fantasma](#las-plataformas-fantasma)
-  * [El Castillo de Disney](#el-castillo-de-disney)
+  * [Zona 1](#Zona-1)
+  * [Zona 2](#Zona-2)
+  * [Zona 3](#Zona-3)
+  * [Zona 4](#Zona-4)
+  * [Zona 5](#Zona-5)
 
 ### Estética
 El juego usa solamente el contenido de la plantilla Third Person y el de principiantes, simplificando al máximo la composición de la escena, aunque sin tener un aspecto pulido y acabado.
@@ -51,40 +50,32 @@ No hay música ambiente y los sonidos utilizados son simplemente:
 - **Cañón**. Cada vez que un cañón dispara emitirá este sonido.
 - **Victoria**. Cuando el jugador coge el trofeo sonará una fanfarria de victoria.
 
+### Dinámica
+La dinámica del juego consiste en superarlo si tardar demasiado tiempo, aunque no hay cronómetro ni límites temporales.
 
+#### Objetivo
+El objetivo del juego es pasar por todas las pruebas hasta conseguir el trofeso que se encuentra en lo más alto del castillo.
 
-### Objetivo
-
-El objetivo del juego es pasar por todas las pruebas hasta conseguir la esfera dorada al final del todo.
-
-#### Victoria
-
-La victoria se consigue cuando el jugador coge la esfera dorada que se encuentra dentro del castillo.
-
-#### Derrota
-
+#### Castigo
 El jugador solo puede morir en el caso de ser golpeado por barriles o balas de cañon. Cuando esto pase, volverá al
 inicio del nivel. En el caso de caer al foso, se le ha proporcionado unas rampas para volver al principio de la prueba
-en la que se ha caido.
+en la que se ha caido, con lo que es un castigo mucho más leve.
 
-### Actores
+### Contenido
+A continuación detallamos el contenido más importante del juego.
 
-#### El Personaje
+#### Avatar
+El clásico maniquí de Unreal Engine que se puede mover y saltar.
 
 #### Pociones
+Hay dos tipos y solo podremos coger una de cada. Lo bueno es que el efecto que tienen sobre el jugador no desaparece en toda la partida.
 
-Durante el nivel solo podremos coger una de cada y el efecto que tienen sobre el jugador no desaparece en todo el juego.
-
-- **Poción de Velocidad**. Es una cápsula flotante de color amarillo. El personaje duplica su velocidad
-al colisionar con ella.
-- **Pocion de Salto**. Es una cápsula flotante de color rojo. El personaje multiplica x1.5 su velocidad de salto.
-
-![](./img/yellow-potion.PNG)
-![](./img/red-potion.PNG)
+- **Poción de velocidad**. Es de color amarillo y permite que el avatar duplique su velocidad al cogerla. 
+- **Pocion de salto**. Es de color amarillo y permite que el avatar multiplique por 1.5 su impulso al saltar.
 
 #### Barriles
 
-Los barriles son cilindros que caen por la ladera que pertenecen al nivel de **Los Barriles Asesinos**. Estos tienen tamaños aleatorios y *spawnean* de manera aleatoria
+Los barriles son cilindros de varios tamaños que caen por la rampa que pertenecen a la Zona 1. Estos tienen tamaños aleatorios y *spawnean* de manera aleatoria
 en lo más alto de la ladera. Si el personaje es golpeado por un barril, hará la "animación" de *ragdoll* y volverá al inicio
 del nivel. Al colisionar, el tronco desaparecerá de la escena.
 
@@ -128,28 +119,29 @@ La esfera dorada es el premio final. Cuando la consigues se acabaría el juego.
 
 
 
-### Niveles
+### Contenido
 
-#### Los Barriles Asesinos
+#### Zona-1
 
 ![](./img/barriles_asesinos.PNG)
 
-#### Los Troncos Mareados
+#### Zona-2
 
 ![](./img/troncos_mareados.PNG)
 
-#### La Pasarela de Jack Sparrow
+#### Zona-3
 
 ![](./img/pasarela_jack.PNG)
 
-#### Las Plataformas Fantasma
+#### Zona-4
 
 ![](./img/plat_fantasma.PNG)
 
-#### El Castillo de Disney
+#### Zona-5
 
 ![](./img/castillo.PNG)
 
-
+### Referencias
+Fall Guys, de Mediatonic Games.
 
 
