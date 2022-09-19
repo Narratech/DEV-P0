@@ -139,11 +139,9 @@ cond(no)->op
 ```
 
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+graph LR;
+    Inicio del avatar-->Cartel, inicio de la rampa;
+    Cartel, inicio de la rampa-->Final de la rampa (generador de barriles);;
 ```
 
 #### Zona-2
