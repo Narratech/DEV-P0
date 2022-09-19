@@ -126,7 +126,7 @@ La esfera dorada es el premio final. Cuando la consigues se acabaría el juego.
 ```mermaid
 graph LR;
     iniAvatar[Inicio del avatar]-->iniRampa[Cartel, inicio de la rampa];
-    iniRampa-->finRampa[Final de la rampa (generador de barriles)];
+    iniRampa[Cartel, inicio de la rampa]-->finRampa[Final de la rampa, con el generador de barriles bastante elevado];
 ```
 
 #### Zona-2
@@ -134,24 +134,33 @@ graph LR;
 ```mermaid
 graph LR;
     finRampa-->troncos[Troncos rodantes, 5];
-    troncos-->finTroncos[Primera zona de descanso];
+    troncos[Troncos rodantes, 5]-->finTroncos[Primera zona de descanso];
 ```
 
 #### Zona-3
 
 ```mermaid
 graph LR;
-    finTroncos-->pasarelas[Pasarelas de madera, 2];
-    pasarelas-->finPasarela[Segunda zona de descanso];
+    finTroncos[Primera zona de descanso]-->pasarelas[Pasarelas de madera, 2];
+    pasarelas[Pasarelas de madera, 2]-->finPasarela[Segunda zona de descanso];
 ```
 
 #### Zona-4
 
-![](./img/plat_fantasma.PNG)
+```mermaid
+graph LR;
+    finPasarela[Segunda zona de descanso];-->plataformas[Plataformas fantasma, 6 y sólo 3 son verdaderas];
+    plataformas[Platafomras fantasma, 6 y sólo 3 son verdaderas]-->finPlataformas[Antesala del castillo];
+```
 
 #### Zona-5
 
-![](./img/castillo.PNG)
+```mermaid
+graph LR;
+    finPlataformas[Antesala del castillo];-->puertas[Puertas falsas, 3 y sólo 1 se puede derribar];
+    puertas[Puertas falsas, 3 y sólo 1 se puede derribar];-->salientes[Plataformas en las paredes del castillo];
+    salientes[Plataformas en las paredes del castillo];-->finAvatar[El trofeo final, arriba del todo];
+```
 
 ## Referencias
 Fall Guys, de Mediatonic Games.
