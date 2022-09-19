@@ -1,10 +1,13 @@
 # DEV-P0
-Desarrollo de Videojuegos - Práctica 0
+Desarrollo de Videojuegos - Práctica 0: SuperCastle
 
-Añade la carpeta StarterContent que ofrece Unreal Engine en la carpeta Content. 
-También disponible si tienes permiso aquí: https://drive.google.com/file/d/1ece2mzryUjjU-GKg8I7tDDl_OTGqkTdx/view?usp=sharing
+Se trata de un prototipo básico de videojuego de plataformas 3D en el que controlamos a un personaje que debe alcanzar un trofeo en lo alto de un castillo, teniendo que superar para ello varias pruebas.
 
-## SuperCastle
+## Instalación y uso
+Todo el contenido del proyecto está disponible aquí en el repositorio, salvo la subcarpeta StarterContent que ofrece Unreal Engine por defecto.
+Esta subcarpeta debe incluirse en la carpeta Content. Si se tiene permiso, es posible [descargarla aquí](https://drive.google.com/file/d/1ece2mzryUjjU-GKg8I7tDDl_OTGqkTdx/view?usp=sharing).
+
+## Preproducción
 - [Objetivo](#objetivo)
   * [Victoria](#victoria)
   * [Derrota](#Derrota)
