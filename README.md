@@ -55,10 +55,10 @@ La dinámica del juego consiste en llegar hasta el final sin tardar ni morir dem
 
 ```mermaid
 stateDiagram
-    [*] --> Empezar desde el inicio
-    Empezar desde el inicio --> Jugar con normalidad
-    Jugar con normalidad --> Muerte
-    Jugar con normalidad --> Victoria
+    [*] --> Inicio
+    Inicio --> Juego
+    Juego --> Muerte
+    Juego --> Victoria
     Muerte --> [*]
     Victoria --> [*]
 ```
