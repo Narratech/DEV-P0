@@ -59,8 +59,8 @@ stateDiagram
     Inicio --> Juego
     Juego --> Muerte
     Juego --> Victoria
-    Muerte --> [*]
-    Victoria --> [*]
+    Muerte --> Inicio
+    Victoria --> Inicio
 ```
 
 #### Objetivo
@@ -177,6 +177,22 @@ Las tareas se han realizado y el esfuerzo ha sido repartido entre los autores.
 |  | OPTIONAL |  |
 | x | Menú | 3-12-2021 |
 | x | HUD | 12-12-2021 |
+
+Las clases principales que se han desarrollados son las siguientes.
+
+```mermaid
+classDiagram
+      Actor <|-- Pawn
+      Pawn <|-- Character
+      Character <|-- SuperCastleCharacter
+      
+      Actor <|-- Barrel
+      Actor <|-- Cannon 
+      Actor <|-- Cannonball
+      Actor <|-- Potion
+      Actor <|-- Trunk
+      Actor <|-- VictoryTrophy
+```
 
 ## Posproducción
 
