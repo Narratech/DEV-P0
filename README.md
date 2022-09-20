@@ -51,7 +51,17 @@ No hay música ambiente y los sonidos utilizados son simplemente:
 - **Victoria**. Cuando el jugador coge el trofeo sonará una fanfarria de victoria.
 
 ### Dinámica
-La dinámica del juego consiste en superarlo si tardar demasiado tiempo, aunque no hay cronómetro ni límites temporales.
+La dinámica del juego consiste en llegar hasta el final sin tardar ni morir demasiado, aunque no hay límites temporales y la muerte únicamente supone repetir el recorrido desde el principio.
+
+```mermaid
+stateDiagram
+    [*] --> Empezar desde el inicio
+    Empezar desde el inicio --> Jugar con normalidad
+    Jugar con normalidad --> Muerte
+    Jugar con normalidad --> Victoria
+    Muerte --> [*]
+    Victoria --> [*]
+```
 
 #### Objetivo
 El objetivo del juego es pasar por todas las pruebas hasta conseguir el trofeso que se encuentra en lo más alto del castillo.
@@ -103,6 +113,8 @@ Estos son los diagramas topológicos de las distintas zonas del nivel. Sería in
 
 #### Zona-1
 
+El juego comienza con una rampa que hay que subir, esquivando barriles.
+
 ```mermaid
 graph LR;
     iniAvatar[Inicio del avatar]-->iniRampa[Cartel, inicio de la rampa];
@@ -110,6 +122,8 @@ graph LR;
 ```
 
 #### Zona-2
+
+Después hay que superar unos roncos rodantes. Aunque no los superes y caigas, es posible ir directamente a la primera zona de descanso.
 
 ```mermaid
 graph LR;
@@ -119,6 +133,8 @@ graph LR;
 
 #### Zona-3
 
+La tercera zona consiste en cruzar unas pasarelas de madera, esquivando balas de cañón.
+
 ```mermaid
 graph LR;
     finTroncos[Primera zona de descanso]-->pasarelas[Pasarelas de madera, 2];
@@ -127,6 +143,8 @@ graph LR;
 
 #### Zona-4
 
+La cuarta zona consiste en saltar sobre plataformas fantasma. Algunas son falsas y no son sólidas, no puedes apoyarte en ellas.
+
 ```mermaid
 graph LR;
     finPasarela[Segunda zona de descanso]-->plataformas[Plataformas fantasma, 6 y sólo 3 son verdaderas];
@@ -134,6 +152,8 @@ graph LR;
 ```
 
 #### Zona-5
+
+La última zona es la del castillo. Primero hay que cruzar las puertas (afortunadamente una es falsa y se puede derribar) y después subir plataformas hasta llegar arriba del todo, donde está el trofeo del juego.
 
 ```mermaid
 graph LR;
