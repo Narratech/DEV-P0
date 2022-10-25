@@ -173,10 +173,18 @@ Las tareas se han realizado y el esfuerzo ha sido repartido entre los autores.
 | ✔ | Mecánica: Balas de cañon que matan | 11-12-2021 |
 | ✔ | Mecánica: Poción de velocidad | 12-12-2021 |
 | ✔ | Mecánica: Poción de salto | 12-12-2021 |
-| ✔ | ...
-|  | OPTIONAL |  |
-| x | Menú | 3-12-2021 |
-| x | HUD | 12-12-2021 |
+|   | ... | |
+|  | OPCIONAL |  |
+| ✔ | Generador barriles | 3-12-2021 |
+| :x: | Menú | 3-12-2021 |
+| :x: | HUD | 12-12-2021 |
+
+Como lista de mecánicas implementadas podría expresarse así:
+- [x] Mecánica: Barriles que matan
+- [x] Mecánica: Balas de cañon que matan 
+- [x] Mecánica: Poción de velocidad
+- [x] Mecánica: Poción de salto 
+- [ ] ...
 
 Las clases principales que se han desarrollados son las siguientes.
 
