@@ -50,6 +50,7 @@ Source/SourceNoRepo/
 # En Unreal Engine 5 hace falta ignorar también la carpeta Characters
 Content/ContentNoRepo/
 Content/StarterContent/
+Content/Megascans/
 Content/Characters/
 
 # Recursos crudos que no queremos o no podemos publicar en un repositorio público y con poco espacio (sean nuestros o ThirdParty)
