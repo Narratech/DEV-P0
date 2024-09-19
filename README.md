@@ -1,10 +1,8 @@
-# Desarrollo de Videojuegos - Práctica 0: SuperCastle
+# Desarrollo de Videojuegos - SuperCastle
 
 Se trata de un prototipo básico de videojuego de plataformas 3D en el que controlamos a un personaje que debe alcanzar un trofeo en lo alto de un castillo, teniendo que superar para ello varias pruebas.
 
 La versión original del juego fue creada por Alejandro Villar, que posteriormente fue revisada y completada por Federico Peinado. El código se distribuye bajo la licencia GPL.
-
-El propósito es servir como ejemplo a los alumnos para las demás prácticas de la asignatura.
 
 ## Instalación y uso
 Todo el contenido del proyecto está disponible aquí en el repositorio, salvo la subcarpeta StarterContent que ofrece Unreal Engine por defecto.
