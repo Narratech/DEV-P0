@@ -5,8 +5,19 @@ Se trata de un prototipo básico de videojuego de plataformas 3D en el que contr
 La versión original del juego fue creada por Alejandro Villar, que posteriormente fue revisada y completada por Federico Peinado. El código se distribuye bajo la licencia GPL.
 
 ## Instalación y uso
-Todo el contenido del proyecto está disponible aquí en el repositorio, salvo la subcarpeta StarterContent que ofrece Unreal Engine por defecto.
-Esta subcarpeta debe incluirse en la carpeta Content. Si se tiene permiso, es posible [descargarla aquí](https://drive.google.com/file/d/1ece2mzryUjjU-GKg8I7tDDl_OTGqkTdx/view?usp=sharing).
+Los ficheros más importantes del proyecto están disponible en este repositorio, aunque puede que algunos binarios potencialmente grandes estén en el almacén GitHub LFS y se requiera tener activa la extensión Git LFS. 
+El resto de los ficheros, generalmente de contenido más pesado o creado por terceros y sin intención de ser modificado en este proyecto, tendrá que descargarse de carpetas compartidas en Google Drive con ficheros ZIP, para después descomprirlos directamente en la carpeta Content. 
+Bastante contenido común a todos los proyectos, como StarterContent, LevelPrototyping o ThirdPerson, está [disponible con acceso general aquí](https://drive.google.com/drive/u/0/folders/1TfoB5S3yQw49-onoFfn0q79PTfk2RoSE).
+
+Para este proyecto (cuando esté actualizado a UE5, me temo) hace falta descargar los ficheros ZIP: 
+* Geometry
+* LevelPrototyping
+* Mannequin
+* StarterContent
+* ThirdPerson
+* ThirdPersonBP
+
+Nos podríamos ahorrar esta descarga usando GitHub Actions, la herramienta de automatización de GitHub. Habría que crear un workflow YAML (en .github/workflows/) que verifique si las carpetas correspondientes están ya presentes en el disco duro, descargue los ficheros ZIP (a través del ID público de las carpetas compartidas en Google Drive) y los descomprima dentro de la carpeta Content.
 
 Al no estar publicada todavía ninguna versión ejecutable del prototipo, ni enlazado ningún video con las pruebas realizadas, es necesario abrir el proyecto en Unreal Engine y jugarlo desde allí.
 
